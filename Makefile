@@ -33,8 +33,9 @@ lint:
 lint-fix:
 	dotnet csharpier format .
 
+# Показывает устаревшие зависимости; ключ -u поднимает версии в csproj.
 update-deps:
-	dotnet list package --outdated
+	dotnet outdated
 
 build-run: build run
 
