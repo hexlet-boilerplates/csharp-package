@@ -11,7 +11,7 @@ jobs:
       - uses: actions/setup-dotnet@v6
         with:
           dotnet-version: '10.0.x'
-      - run: make install
       - run: make setup
+      - run: make build
       - run: make lint
       - run: make test
