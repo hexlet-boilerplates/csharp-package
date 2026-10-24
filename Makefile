@@ -31,6 +31,9 @@ test-coverage:
 lint:
 	csharpier check .
 	dotnet format --verify-no-changes
+	rumdl check .
+	typos
+	jactionlint
 
 lint-fix:
 	csharpier format .
