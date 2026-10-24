@@ -29,9 +29,11 @@ test-coverage:
 
 lint:
 	dotnet csharpier check .
+	dotnet format --verify-no-changes
 
 lint-fix:
 	dotnet csharpier format .
+	dotnet format
 
 # Показывает устаревшие зависимости; ключ -u поднимает версии в csproj.
 update-deps:

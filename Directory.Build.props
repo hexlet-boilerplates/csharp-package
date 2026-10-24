@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <!-- Анализаторы SDK без лишних пакетов; уровень зафиксирован, чтобы новый SDK не менял набор правил. -->
+    <AnalysisLevel>10.0</AnalysisLevel>
+    <AnalysisMode>Recommended</AnalysisMode>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <!-- Нужен для IDE0005 (лишние using) при сборке. -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <!-- Уязвимые пакеты (NU1903, NU1904) валят сборку. -->
+    <NuGetAudit>true</NuGetAudit>
+    <WarningsAsErrors>$(WarningsAsErrors);NU1903;NU1904</WarningsAsErrors>
+  </PropertyGroup>
+</Project>

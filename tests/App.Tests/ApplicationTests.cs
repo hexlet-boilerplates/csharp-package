@@ -1,5 +1,3 @@
-using App;
-
 namespace App.Tests;
 
 public class ApplicationTests
