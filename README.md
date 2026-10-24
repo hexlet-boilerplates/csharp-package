@@ -20,6 +20,8 @@ make
 make install
 ```
 
+`make install` also installs the Git hooks with [hk](https://hk.jdx.dev): a fast lint before each commit and the tests before each push. CI runs the same checks with `hk check --all`.
+
 ## Build a distribution
 
 ```bash

@@ -4,6 +4,7 @@ install:
 	mise install
 	dotnet restore src/App
 	dotnet restore tests/App.Tests
+	mise exec -- hk install --mise
 
 build:
 	dotnet build

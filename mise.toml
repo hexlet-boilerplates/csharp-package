@@ -3,3 +3,5 @@
 dotnet = "latest"
 "dotnet:csharpier" = "latest"
 "dotnet:dotnet-outdated-tool" = "latest"
+hk = "latest"
+pkl = "latest"

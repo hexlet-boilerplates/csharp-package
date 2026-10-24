@@ -11,5 +11,5 @@ jobs:
       - uses: jdx/mise-action@v5
       - run: make setup
       - run: make build
-      - run: make lint
+      - run: mise exec -- hk check --all
       - run: make test
