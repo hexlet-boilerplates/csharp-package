@@ -23,10 +23,10 @@ run-dist:
 	./dist/App
 
 test:
-	dotnet test tests/App.Tests
+	dotnet test --project tests/App.Tests
 
 test-coverage:
-	dotnet test tests/App.Tests --collect:"XPlat Code Coverage"
+	dotnet test --project tests/App.Tests --coverlet
 
 lint:
 	csharpier check .
