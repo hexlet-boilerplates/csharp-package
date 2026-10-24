@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := build-run
 
 install:
-	dotnet tool restore
+	mise install
 	dotnet restore src/App
 	dotnet restore tests/App.Tests
 
@@ -28,16 +28,16 @@ test-coverage:
 	dotnet test tests/App.Tests --collect:"XPlat Code Coverage"
 
 lint:
-	dotnet csharpier check .
+	csharpier check .
 	dotnet format --verify-no-changes
 
 lint-fix:
-	dotnet csharpier format .
+	csharpier format .
 	dotnet format
 
 # Показывает устаревшие зависимости; ключ -u поднимает версии в csproj.
 update-deps:
-	dotnet outdated
+	dotnet-outdated
 
 build-run: build run
 

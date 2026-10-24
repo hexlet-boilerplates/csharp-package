@@ -6,7 +6,7 @@ A project template with only the bare minimum of structure. A good starting poin
 
 ## Requirements
 
-[.NET SDK 10](https://dotnet.microsoft.com/download)
+[mise](https://mise.jdx.dev). It installs the .NET SDK, csharpier and dotnet-outdated from `mise.toml`.
 
 ## Start
 
@@ -66,7 +66,7 @@ make update-deps
 To bump versions in the project files, pass the upgrade flag:
 
 ```bash
-dotnet outdated --upgrade
+dotnet-outdated --upgrade
 ```
 
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=csharp-package)

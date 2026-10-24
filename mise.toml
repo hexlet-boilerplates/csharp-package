@@ -1,0 +1,5 @@
+# Инструменты проекта. Версии latest, точные версии лежат в mise.lock.
+[tools]
+dotnet = "latest"
+"dotnet:csharpier" = "latest"
+"dotnet:dotnet-outdated-tool" = "latest"
